@@ -30,8 +30,8 @@ class Club(Base):
     jugadores = relationship("Jugador", back_populates="club")
 
     
-    def __repr__(self):
-        return "Club(%d): nombre=%s deporte=%s fundación=%d" % (
+    def __repr__(self): #repr personalizar un objeto - retornar un objeto
+        return "Club-%d-: nombre=%s deporte=%s fundación=%d" % (
                           self.id, 
                           self.nombre, 
                           self.deporte, 
